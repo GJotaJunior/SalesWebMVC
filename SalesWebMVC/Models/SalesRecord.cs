@@ -7,6 +7,7 @@ namespace SalesWebMVC.Models
     public class SalesRecord
     {
         public int Id { get; set; }
+        [DisplayFormat(DataFormatString = "{0:yyyy/MM/dd}")]
         public DateTime Date { get; set; }
         [DataType(DataType.Currency)]
         public double Amount { get; set; }
